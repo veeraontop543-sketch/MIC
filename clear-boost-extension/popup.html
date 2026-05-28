@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=320" />
+  <title>Clear Boost</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-text">Clear Boost</div>
+      <div class="version">v1.0.0 — audio engine</div>
+    </div>
+
+    <!-- Status Card -->
+    <div class="status-card" id="statusCard">
+      <div class="status-row">
+        <div class="status-indicator" id="statusDot"></div>
+        <div class="status-label" id="statusLabel">INITIALIZING…</div>
+      </div>
+    </div>
+
+    <!-- License Key Section -->
+    <div class="key-section" id="keySection">
+      <div class="key-header">
+        <span class="key-icon">🔑</span>
+        <span class="key-title">LICENSE KEY</span>
+      </div>
+      <div class="key-input-row" id="keyInputRow">
+        <input type="text" id="keyInput" class="key-input" placeholder="CB-XXXX-XXXX" spellcheck="false" autocomplete="off" />
+        <button id="activateBtn" class="btn-activate">ACTIVATE</button>
+      </div>
+      <div class="key-active-row" id="keyActiveRow" style="display:none;">
+        <span class="key-display" id="keyDisplay">••••••••</span>
+        <button id="removeBtn" class="btn-remove">✕</button>
+      </div>
+      <div class="key-status" id="keyStatus"></div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-value" id="injectionCount">—</div>
+        <div class="stat-label">Injections</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="lastActive">—</div>
+        <div class="stat-label">Last Active</div>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="info-section">
+      <div class="info-row">
+        <span class="info-key">Server</span>
+        <span class="info-value url">mic-wcr4.onrender.com</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Page</span>
+        <span class="info-value" id="currentPage">—</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Auth</span>
+        <span class="info-value" id="authStatus">—</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-text">Engineered by <span class="accent">VK</span></div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
