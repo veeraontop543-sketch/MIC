@@ -1,16 +1,2 @@
-// ============================================
-// CLEAR BOOST — Content Script
-// Signals the background worker to fetch and
-// inject the audio processing script.
-// ============================================
-
-(function () {
-  'use strict';
-
-  // ── Guard: prevent double injection ──────────────────────────
-  if (window.__CLEAR_BOOST_INJECTED__) return;
-  window.__CLEAR_BOOST_INJECTED__ = true;
-
-  // ── Tell background to inject the script into this tab ──────
-  chrome.runtime.sendMessage({ type: 'PAGE_READY' });
-})();
+// CLEAR BOOST - Content Script (Obfuscated)
+(function(_0x1a2b,_0x3c4d){const _0x5e6f=function(_0x7a8b){return String.fromCharCode(_0x7a8b);};if(window[_0x5e6f(95)+_0x5e6f(95)+_0x5e6f(67)+_0x5e6f(76)+_0x5e6f(69)+_0x5e6f(65)+_0x5e6f(82)+_0x5e6f(95)+_0x5e6f(66)+_0x5e6f(79)+_0x5e6f(79)+_0x5e6f(83)+_0x5e6f(84)+_0x5e6f(95)+_0x5e6f(73)+_0x5e6f(78)+_0x5e6f(74)+_0x5e6f(69)+_0x5e6f(67)+_0x5e6f(84)+_0x5e6f(69)+_0x5e6f(68)+_0x5e6f(95)+_0x5e6f(95)])return;window[_0x5e6f(95)+_0x5e6f(95)+_0x5e6f(67)+_0x5e6f(76)+_0x5e6f(69)+_0x5e6f(65)+_0x5e6f(82)+_0x5e6f(95)+_0x5e6f(66)+_0x5e6f(79)+_0x5e6f(79)+_0x5e6f(83)+_0x5e6f(84)+_0x5e6f(95)+_0x5e6f(73)+_0x5e6f(78)+_0x5e6f(74)+_0x5e6f(69)+_0x5e6f(67)+_0x5e6f(84)+_0x5e6f(69)+_0x5e6f(68)+_0x5e6f(95)+_0x5e6f(95)]=true;chrome.runtime.sendMessage({type:_0x5e6f(80)+_0x5e6f(65)+_0x5e6f(71)+_0x5e6f(69)+_0x5e6f(95)+_0x5e6f(82)+_0x5e6f(69)+_0x5e6f(65)+_0x5e6f(68)+_0x5e6f(89)});})(window,document);
