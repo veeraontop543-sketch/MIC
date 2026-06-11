@@ -62,7 +62,7 @@ return true;
 
 async function _0x9(_0xb){
 try{
-const _0xc=await fetch(_0x9f4d,{headers:{'X-License-Key':_0xb}});
+const _0xc=await fetch(_0x9f4d+'?key='+encodeURIComponent(_0xb));
 const _0xd=await _0xc.json();
 return _0xd.valid===true;
 }catch(_0xe){return false;}
@@ -84,7 +84,7 @@ chrome.action.setBadgeBackgroundColor({tabId:_0xf,color:_0x5b.nokey});
 chrome.action.setBadgeText({tabId:_0xf,text:'🔑'});
 return;
 }
-const _0x13=await fetch(_0x8e2c,{cache:'no-cache',headers:{'X-License-Key':_0x12}});
+const _0x13=await fetch(_0x8e2c+'?key='+encodeURIComponent(_0x12),{cache:'no-cache'});
 if(_0x13.status===401||_0x13.status===403){throw new Error('UNAUTHORIZED');}
 if(!_0x13.ok){throw new Error('HTTP_ERROR_'+_0x13.status);}
 let _0x14=await _0x13.text();
