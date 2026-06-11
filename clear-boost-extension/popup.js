@@ -5,8 +5,6 @@ const _0x2=document.getElementById('statusDot');
 const _0x3=document.getElementById('statusLabel');
 const _0x4=document.getElementById('injectionCount');
 const _0x5=document.getElementById('lastActive');
-const _0x6=document.getElementById('currentPage');
-const _0x7=document.getElementById('authStatus');
 const _0x8=document.getElementById('keyInput');
 const _0x9=document.getElementById('activateBtn');
 const _0xa=document.getElementById('removeBtn');
@@ -36,43 +34,21 @@ const {tabStatus:_0x16,totalInjections:_0x17,lastActive:_0x18,hasKey:_0x19}=_0x1
 const _0x1a=_0xf.checked;
 if(!_0x19){
 _0x15('nokey','KEY REQUIRED');
-_0x7.textContent='No key';
-_0x7.style.color='#ff8800';
 }else if(!_0x1a){
 _0x15('idle','DISABLED');
-_0x7.textContent='Disabled';
-_0x7.style.color='#666';
 }else if(_0x16.status==='active'){
 _0x15('active','EXTENSION ACTIVE');
-_0x7.textContent='Authorized ✓';
-_0x7.style.color='#00ff41';
 }else if(_0x16.status==='unauthorized'){
 _0x15('error','UNAUTHORIZED');
-_0x7.textContent='Invalid key';
-_0x7.style.color='#ff3333';
 }else if(_0x16.status==='error'){
 _0x15('error','INJECTION FAILED');
-_0x7.textContent='Error';
-_0x7.style.color='#ff3333';
 }else{
 _0x15('idle','STANDBY');
-_0x7.textContent='Ready';
-_0x7.style.color='#666';
 }
 _0x4.textContent=_0x17.toLocaleString();
 _0x5.textContent=_0x18?_0x1b(_0x18):'—';
 });
 }
-
-chrome.tabs.query({active:true,currentWindow:true},(_0x1c)=>{
-if(_0x1c[0]?.url){
-try{
-_0x6.textContent=new URL(_0x1c[0].url).hostname;
-}catch(_0x1d){
-_0x6.textContent='N/A';
-}
-}
-});
 
 _0x9.addEventListener('click',()=>{
 const _0x1e=_0x8.value.trim();
